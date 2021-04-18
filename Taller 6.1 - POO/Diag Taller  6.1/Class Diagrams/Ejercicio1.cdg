@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Ejercicio1">
+  <ClassDiagramComponents>
+    <Class name="Equipo" package="" visibility="public" isAbstract="true" xPosition="341.0" yPosition="61.0">
+      <Fields>
+        <Field name="edad" type="int" visibility="private"/>
+        <Field name="id" type="int" visibility="private"/>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="apellido" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="mostrarPersonal" returnType="String" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="Futbolista" package="" visibility="public" xPosition="63.0" yPosition="221.0">
+      <Fields>
+        <Field name="dorsal" type="int" visibility="private"/>
+        <Field name="demarcacion" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="mostrarPersonal" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Entrenador" package="" visibility="public" xPosition="341.0" yPosition="380.0">
+      <Fields>
+        <Field name="idFederacion" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="mostrarPersonal" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Masajista" package="" visibility="public" xPosition="612.0" yPosition="221.0">
+      <Fields>
+        <Field name="titulacion" type="String" visibility="private"/>
+        <Field name="aniosExperiencia" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="mostrarPersonal" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Masajista" target="Equipo"/>
+    <IsRelation name="is" source="Entrenador" target="Equipo"/>
+    <IsRelation name="is" source="Futbolista" target="Equipo"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

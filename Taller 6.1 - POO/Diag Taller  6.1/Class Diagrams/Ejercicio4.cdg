@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Ejercicio4">
+  <ClassDiagramComponents>
+    <Class name="Ordenador" package="" visibility="public" isAbstract="true" xPosition="357.0" yPosition="53.0">
+      <Fields>
+        <Field name="codigo" type="int" visibility="private"/>
+        <Field name="precio" type="int" visibility="private"/>
+        <Field name="eslogan" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="mostrarDatos" returnType="String" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="Portatil" package="" visibility="public" xPosition="215.0" yPosition="293.0">
+      <Fields>
+        <Field name="peso" type="double" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="mostrarDatos" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Sobremesa" package="" visibility="public" xPosition="515.0" yPosition="293.0">
+      <Fields>
+        <Field name="descripcionTorre" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="mostrarDatos" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Sobremesa" target="Ordenador"/>
+    <IsRelation name="is" source="Portatil" target="Ordenador"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Ejercicio3">
+  <ClassDiagramComponents>
+    <Class name="Persona" package="" visibility="public" xPosition="226.0" yPosition="56.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Profesor" package="" visibility="public" xPosition="226.0" yPosition="214.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="ProfesorInterno" package="" visibility="public" xPosition="226.0" yPosition="394.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

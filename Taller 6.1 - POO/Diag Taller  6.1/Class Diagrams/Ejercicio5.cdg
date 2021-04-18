@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Ejercicio5">
+  <ClassDiagramComponents>
+    <Class name="Cuadrilatero" package="" visibility="public" isAbstract="true" xPosition="361.0" yPosition="39.0">
+      <Fields>
+        <Field name="x" type="double" visibility="private"/>
+        <Field name="y" type="double" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="calcularArea" returnType="void" visibility="public"/>
+        <Method name="mostrarArea" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Rectangulo" package="" visibility="public" xPosition="82.0" yPosition="232.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="calcularArea" returnType="void" visibility="public"/>
+        <Method name="mostrarArea" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Trapecio" package="" visibility="public" xPosition="361.0" yPosition="325.0">
+      <Fields>
+        <Field name="h" type="double" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="calcularArea" returnType="void" visibility="public"/>
+        <Method name="mostrarArea" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Cuadrado" package="" visibility="public" xPosition="656.0" yPosition="220.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="calcularArea" returnType="void" visibility="public"/>
+        <Method name="mostrarArea" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Trapecio" target="Cuadrilatero"/>
+    <IsRelation name="is" source="Cuadrado" target="Cuadrilatero"/>
+    <IsRelation name="is" source="Rectangulo" target="Cuadrilatero"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

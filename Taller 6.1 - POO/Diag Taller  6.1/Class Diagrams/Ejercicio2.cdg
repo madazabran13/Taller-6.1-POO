@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Ejercicio2">
+  <ClassDiagramComponents>
+    <Class name="Empleado" package="" visibility="public" isAbstract="true" xPosition="312.0" yPosition="25.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="Operario" package="" visibility="public" xPosition="114.0" yPosition="184.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="Directivo" package="" visibility="public" xPosition="504.0" yPosition="184.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="Oficial" package="" visibility="public" xPosition="9.0" yPosition="345.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="Tecnico" package="" visibility="public" xPosition="225.0" yPosition="345.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Tecnico" target="Operario"/>
+    <IsRelation name="is" source="Directivo" target="Empleado"/>
+    <IsRelation name="is" source="Oficial" target="Operario"/>
+    <IsRelation name="is" source="Operario" target="Empleado"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
